@@ -14,9 +14,10 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:fontFamily="@font/hanalei_fill"
+        android:hint="Nombre"
         android:inputType="textPersonName"
-        android:text="Nombre"
         android:textColor="#FFFFFF"
+        android:textColorHint="#9C9C9C"
         android:textSize="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,10 +28,11 @@
         android:layout_height="50dp"
         android:ems="10"
         android:fontFamily="@font/hanalei_fill"
+        android:hint="Apellido"
         android:inputType="textPersonName"
         android:scrollbarSize="22dp"
-        android:text="Apellido"
         android:textColor="#FFFFFF"
+        android:textColorHint="#9C9C9C"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -43,7 +45,7 @@
         android:hint="Correo"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
-        android:textColorHint="#FAFAFA"
+        android:textColorHint="#9C9C9C"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -93,12 +95,37 @@
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="50dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/next"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        android:src="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/next" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/previous"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/slackey"
+        android:textColor="#FF0101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
